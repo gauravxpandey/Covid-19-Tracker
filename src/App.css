@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #161625;
+}
+
+.app__dropdown {
+  background-color: #2C2C51;
+  color: #fff;
+}
+
+.MuiList-root.MuiMenu-list.MuiList-padding{
+  background-color: #2C2C51;
+  color: white;
+}
+
+.MuiSelect-outlined.MuiSelect-outlined {
+  color: white;
+}
+
+h1{
+  color: #ded8d8;
+}
+
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.app__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__left{
+  flex: 0.85;
+}
+
+.app__status{
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  background-color: #12121E;
+  flex-grow: 1;
+}
+
+.app__graph {
+  flex-grow: 1;
+}
+
+.foot{
+  display: none;
+}
+
+h3{
+  color:white;
+}
+
+h3:not(:first-child){
+  padding-top: 15px;
+  padding-bottom: 8px;
+}
+
+.app__graphTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 990px){
+  .app{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 850px){
+  .app__status{
+    display: flex;
+    justify-content: space-between;
+  }
+  .app{
+    padding: 12px;
+  }
+  h3{
+    color:white;
+    text-align: center;
+  }
+  .livecase{
+    padding-top: 20px !important;
+  }
+  .foot{
+    display: block;
+    color: #fff;
+    font-weight: 300 !important;
+    font-size: 15px !important;
+    padding-top: 7px;
+    text-align: center;
+  }
+}
